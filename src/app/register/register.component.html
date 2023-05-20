@@ -1,0 +1,139 @@
+<app-home></app-home>
+<!-- <body>
+<h1 style="text-align:center">Register Form</h1>
+<form  class="form-inline">
+			<table class="center">
+			<tr>
+					<td>Employee Id</td>
+					<td><input type="number" name="Emp_Id" /></td>
+				</tr>
+				<tr>
+					<td>Employee Name</td>
+					<td><input type="text" name="Emp_Name" /></td>
+				</tr>
+				<tr>
+					<td>Employee Designation</td>
+					<td><input type="text" name="Emp_Designation" /></td>
+				</tr>
+				<tr>
+					<td>Employee Expertise</td>
+					<td><input type="text" name="Emp_Expertise" /></td>
+				</tr>
+					<tr>
+					<td>Employee status</td>
+					<td><input type="text" name="Emp_status" /></td>
+				</tr>
+				<tr>
+					<td>Date of joining</td>
+					<td><input type="date" name="Emp_Doj" /></td>
+				</tr>
+				<tr>
+					<td>Last Date</td>
+					<td><input type="date" name="Emp_Lastdate" /></td>
+				</tr>
+                <tr>
+				
+				 <td><input type="submit" value="Submit" style="background-color:rgb(77, 88, 200) ;" (onsubmit)="users()"/></td> 
+			</tr>
+				</table>
+
+				<button type="submit" (click)=" saveEmployee() "></button>
+                </form>
+                 {{employees|json}}
+
+			
+            </body> -->
+
+			<div>
+				<div class="submit-form">
+				  <div *ngIf="!submitted">
+					<div class="form-group">
+					  <label for="Emp_Id">ID</label>
+					  <input
+						type="number"
+						class="form-control"
+						id="emp_Id"
+						required
+						[(ngModel)]="employee.emp_Id"
+						name="emp_Id"
+					  />
+					</div>
+			  
+					<div class="form-group">
+					  <label for="emp_Name">Name</label>
+					  <input
+					  type="tex"
+						class="form-control"
+						id="emp_Name"
+						required
+						[(ngModel)]="employee.emp_Name"
+						name="emp_Name"
+					  />
+					</div>
+					<div class="form-group">
+						<label for="emp_Designation">Designation</label>
+						<input
+						type="tex"
+						  class="form-control"
+						  id="emp_Designation"
+						  required
+						  [(ngModel)]="employee.emp_Designation"
+						  name="emp_Designation"
+						/>
+					  </div>
+					  <div class="form-group">
+						<label for="emp_Expertise">Expertise</label>
+						<input
+						type="tex"
+						  class="form-control"
+						  id="emp_Expertise"
+						  required
+						  [(ngModel)]="employee.emp_Expertise"
+						  name="emp_Expertise"
+						/>
+					  </div>
+					  <div class="form-group">
+						<label for="emp_status">status</label>
+						<input
+						type="tex"
+						  class="form-control"
+						  id="emp_status"
+						  required
+						  [(ngModel)]="employee.emp_status"
+						  name="emp_status"
+						/>
+					  </div>
+
+					  <div class="form-group">
+						<label for="emp_Doj">Doj</label>
+						<input
+						type="tex"
+						  class="form-control"
+						  id="emp_Doj"
+						  required
+						  [(ngModel)]="employee.emp_Doj"
+						  name="emp_Doj"
+						/>
+					  </div>
+
+					  <div class="form-group">
+						<label for="emp_Lastdate">Doj</label>
+						<input
+						type="tex"
+						  class="form-control"
+						  id="emp_Lastdate"
+						  required
+						  [(ngModel)]="employee.emp_Lastdate"
+						  name="emp_Lastdate"
+						/>
+					  </div>
+			  
+					<button (click)="saveEmployee()" class="btn btn-success">Submit</button>
+				  </div>
+			  
+				  <!-- <div *ngIf="submitted">
+					<h4>Tutorial was submitted successfully!</h4>
+					<button class="btn btn-success" (click)="newTutorial()">Add</button>
+				  </div> -->
+				</div>
+			  </div>

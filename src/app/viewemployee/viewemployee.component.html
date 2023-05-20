@@ -1,0 +1,39 @@
+<p>viewemployee works!</p>
+<div class="container">  
+    
+    <h1> Employee Management system </h1>  
+      
+    <app-home></app-home>
+
+<div class="tabdiv">
+  <h2>All Employees</h2>
+  <table id="tableid" class="tb">
+    <tr>
+      <th>Emp_Id</th>
+      <th>Emp_Name</th>
+      <th>Emp_Designation</th>
+      <th>Emp_Expertise</th>
+      <th>Emp_status</th>
+      <th>Emp_Doj</th>
+      <th>Emp_Lastdate</th>
+      <th>Action</th>
+      <th>Action</th>
+    </tr>
+
+    <tr *ngFor="let e of employees">
+      <td>{{e.emp_Id}}</td>
+      <td>{{e.emp_Name}}</td>
+      <td>{{e.emp_Designation}}</td>
+      <td>{{e.emp_Expertise}}</td>
+      <td>{{e.emp_status}}</td>
+      <td>{{e.emp_Doj}}</td>
+      <td>{{e.emp_Lastdate}}</td>
+      <td>
+        <a href=""><button class="btn">Edit</button></a>
+      </td>
+      <td>
+        <a routerLink=""><button class="btn">Delete</button></a>
+      </td>
+    </tr>
+  </table>
+</div>

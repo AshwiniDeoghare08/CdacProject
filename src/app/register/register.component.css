@@ -1,0 +1,36 @@
+/* body{
+	background-color: linen;
+	
+} */
+/*
+.form-inline{
+	
+	
+		  flex-flow: row wrap;
+		  align-items: center;
+		}
+.form-inline input{
+	
+	 vertical-align: middle;
+	  margin: 5px 10px 5px 0;
+	  padding: 10px;
+	  background-color: #fff;
+	  border: 1px solid #ddd;
+	alingn-items:center;
+}
+.form-inline button {
+	  padding: 10px 20px;
+	  background-color: rgb(28, 117, 206);
+	  border: 1px solid #ddd;
+	  color: white;
+	 
+	}
+.center{
+	margin-left:auto;
+	margin-right:auto;
+} */
+
+.submit-form {
+	max-width: 400px;
+	margin: auto;
+  }
